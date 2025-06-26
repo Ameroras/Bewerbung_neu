@@ -2,10 +2,10 @@ import { Chip } from "./Chip";
 import { Section } from "./Section";
 
 const skills = [
-    "Orga",
+    "Organisation",
     "Kommunikation",
     "Empathie",
-    "Verantwortungsbewusstsein",
+    "Verantwortung",
     "Resilienz",
     "Storytelling",
     "Flexibilität",
@@ -15,10 +15,10 @@ const skills = [
 export const Skills = () => {
     return (
         <>
-            <div className="w-full flex flex-col gap-4">
+            <div className="w-full px-3 py-4 rounded-xl flex flex-col gap-2 bg-slate-800 shadow-lg border border-slate-600">
                 <Section>
-                    <p className="text-4xl pb-2"> Berufserfahrung</p>
-                    <div className=" grid grid-cols-3 gap-1.5">
+                    <p className="text-4xl pb-2"> Meine Fähigkeiten</p>
+                    <div className=" grid text-sm md:text-base grid-cols-3 gap-1.5">
                         {skills.map((itm, idx) => {
                             return <Chip key={itm + idx} label={itm} />;
                         })}

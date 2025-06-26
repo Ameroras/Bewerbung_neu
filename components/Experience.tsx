@@ -3,7 +3,7 @@ import { Section } from "./Section";
 export const Experience = () => {
     return (
         <>
-            <div>
+            <div className="w-full px-3 py-4 rounded-xl flex flex-col gap-2 bg-slate-800 shadow-lg border border-slate-600">
                 <p className="text-4xl py-2"> Berufserfahrung</p>
                 <Section>
                     <p className="text-lg"> Umschulung DA</p>

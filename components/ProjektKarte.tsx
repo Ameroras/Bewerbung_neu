@@ -32,7 +32,7 @@ export const ProjektKarte = ({ url, imageSet, git_url }: ProjektKarteProps) => {
                     />
                 </div>
                 <div className="border-b border-indigo-950/30 bg-indigo-700/30 rounded-b-2xl  text-center">
-                    <p className="py-1">A tiny fun app for random fun facts</p>
+                    <p className="py-1">A tiny fun app for random fun facts,</p>
                 </div>
             </div>
         </>
