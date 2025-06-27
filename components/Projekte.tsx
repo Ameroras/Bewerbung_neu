@@ -1,4 +1,3 @@
-import { subscribe } from "node:diagnostics_channel";
 import { ProjektKarte } from "./Shared/ProjektKarte";
 import { Section } from "./Shared/Section";
 
