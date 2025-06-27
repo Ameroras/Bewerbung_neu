@@ -40,9 +40,9 @@ const data = [
 export default class Example extends PureComponent {
     render() {
         return (
-            <div className="h-[20rem] w-[22rem]">
-                <ResponsiveContainer width="140%" height="145%" className={""}>
-                    <RadarChart cx="50%" cy="50%" data={data} width={630}>
+            <div className="h-[20rem] w-[22rem] ">
+                <ResponsiveContainer width="130%" height="140%" className={""}>
+                    <RadarChart cx="52%" cy="55%" data={data}>
                         <Legend className="" align="left" verticalAlign="top" />
                         <PolarGrid />
                         <PolarAngleAxis dataKey="subject" />

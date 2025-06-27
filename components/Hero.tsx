@@ -82,9 +82,9 @@ export const Hero = () => {
             </p>
 
             {/* Oberer Bereich: zwei Spalten nebeneinander */}
-            <div className="flex flex-col md:flex-row gap-6 px-2 ">
+            <div className="flex flex-col md:flex-row w-full justify-center px-2">
                 {/* Linke Spalte */}
-                <div className="flex flex-col w-full md:flex-row gap-16">
+                <div className="flex flex-col w-full md:flex-row gap-4">
                     {/* Profilbild */}
                     <Image
                         src="/Bewerbungsfoto.jpg"
@@ -97,7 +97,7 @@ export const Hero = () => {
                     {/* Skillset und Zertifikate */}
                     <div className="flex flex-col gap-4 px-2">
                         <div>
-                            <p className="font-bold text-2xl">Skillset:</p>
+                            <p className="font-bold text-2xl pb-3">Skillset:</p>
                             <div className="grid grid-cols-3 gap-1">
                                 {labels.map((val, idx) => (
                                     <HoverChip
@@ -127,7 +127,7 @@ export const Hero = () => {
                         </div>
                     </div>
                     {/* Rechte Spalte: Radar-Chart */}
-                    <div>
+                    <div className="">
                         <MyChart />
                     </div>
                 </div>

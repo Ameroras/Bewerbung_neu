@@ -23,7 +23,13 @@ export const HoverChip = ({ label, skills }: ChipProps) => {
                     }>
                     {Array.isArray(skills)
                         ? skills.map((element) => {
-                              return <p key={element}>{element}</p>;
+                              return (
+                                  <p
+                                      className="text-sm font-normal"
+                                      key={element}>
+                                      {element}
+                                  </p>
+                              );
                           })
                         : skills}
                 </div>
