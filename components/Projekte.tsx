@@ -1,3 +1,4 @@
+import { subscribe } from "node:diagnostics_channel";
 import { ProjektKarte } from "./Shared/ProjektKarte";
 import { Section } from "./Shared/Section";
 
@@ -23,23 +24,27 @@ const projektListe = [
         thumb: "fun.jpg",
         imgs: fun_images,
         git_url: "https://github.com/AmerorasWorks/API_Projektwoche",
+        subtitle: "A tiny Fun-App for Fun Facts",
     },
     {
         thumb: "wetter.jpg",
         imgs: wetter_images,
         git_url:
             "https://github.com/AmerorasWorks/Paxsisprojekt_-Visualliesierungen",
+        subtitle: "Wetterapp",
     },
     {
         thumb: "IHK_thumb.png",
         imgs: ihk_images,
         git_url: "https://github.com/Ameroras/IHK_Pruefung",
+        subtitle: "IHK-Prüfung",
     },
     {
         thumb: "musik_thumb.png",
         imgs: musik_images,
         git_url:
             "https://github.com/AmerorasWorks/Paxsisprojekt_-Visualliesierungen",
+        subtitle: "Musikapp",
     },
 ];
 
@@ -57,6 +62,7 @@ export const Projekte = () => {
                                     url={lnk.thumb}
                                     key={idx}
                                     git_url={lnk.git_url}
+                                    subtitle={lnk.subtitle}
                                 />
                             );
                         })}

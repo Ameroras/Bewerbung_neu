@@ -9,9 +9,15 @@ type ProjektKarteProps = {
     url: string;
     imageSet: string[];
     git_url: string;
+    subtitle: string;
 };
 
-export const ProjektKarte = ({ url, imageSet, git_url }: ProjektKarteProps) => {
+export const ProjektKarte = ({
+    url,
+    imageSet,
+    git_url,
+    subtitle,
+}: ProjektKarteProps) => {
     const [hovState, setHovState] = useState<boolean>(false);
     return (
         <>
@@ -32,7 +38,7 @@ export const ProjektKarte = ({ url, imageSet, git_url }: ProjektKarteProps) => {
                     />
                 </div>
                 <div className="border-b border-indigo-950/30 bg-indigo-700/30 rounded-b-2xl  text-center">
-                    <p className="py-1">A tiny fun app for random fun facts,</p>
+                    <p className="">{subtitle}</p>
                 </div>
             </div>
         </>

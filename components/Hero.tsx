@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { HoverChip } from "./Shared/HoverChip";
+import MyChart from "./recharts/MyChart";
 
 const labels = ["Python", "Power BI", "SQL", "Excel", "PM-Tools", "Teamplay"];
 const skills = [
@@ -83,7 +84,7 @@ export const Hero = () => {
             {/* Oberer Bereich: zwei Spalten nebeneinander */}
             <div className="flex flex-col md:flex-row gap-6 px-2 ">
                 {/* Linke Spalte */}
-                <div className="flex flex-col justify-around w-full md:flex-row gap-4">
+                <div className="flex flex-col w-full md:flex-row gap-16">
                     {/* Profilbild */}
                     <Image
                         src="/Bewerbungsfoto.jpg"
@@ -116,24 +117,18 @@ export const Hero = () => {
                                 height={200}
                                 alt="IHK Zertifikat 1"
                             />
-                            <Image
+                            {/* <Image
                                 src="/cert.png"
                                 className="rounded-4xl"
                                 width={250}
                                 height={200}
                                 alt="IHK Zertifikat 2"
-                            />
+                            /> */}
                         </div>
                     </div>
                     {/* Rechte Spalte: Radar-Chart */}
-                    <div className="flex items-center justify-center">
-                        <Image
-                            src="/Radar_Skillset.png"
-                            className="rounded-4xl"
-                            width={400}
-                            height={400}
-                            alt="Radar Chart Skillset"
-                        />
+                    <div>
+                        <MyChart />
                     </div>
                 </div>
             </div>
