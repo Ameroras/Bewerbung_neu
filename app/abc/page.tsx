@@ -1,8 +1,3 @@
-import { Experience } from "@/components/Experience";
-import { Hero } from "@/components/Hero";
-import { Projekte } from "@/components/Projekte";
-import { Skills } from "@/components/Skills";
-
 export default function Home() {
     return (
         <>
