@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { Chip } from "./Chip";
+import { HoverChip } from "./HoverChip";
 
 const labels = ["Python", "Power BI", "SQL", "Excel", "PM-Tools", "Teamplay"];
 const skills = [
@@ -96,7 +96,7 @@ export const Hero = () => {
               <p className="font-bold text-2xl">Skillset:</p>
               <div className="grid grid-cols-3 gap-1">
                 {labels.map((val, idx) => (
-                  <Chip skills={skills[idx]} key={val + idx} label={val} />
+                  <HoverChip skills={skills[idx]} key={val + idx} label={val} />
                 ))}
               </div>
             </div>
