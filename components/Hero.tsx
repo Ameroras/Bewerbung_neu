@@ -138,26 +138,17 @@ export const Hero = () => {
                 <p className="text-3xl py-3">Was mich ausmacht</p>
                 <p>
                     Ich bringe langjährige Erfahrung in der persönlichen
-                    Assistenz mit, gepaart mit ausgeprägtem{" "}
-                    <b>
-                        Verantwortungsbewusstsein, Kommunikationsstärke und
-                        Organisationstalent
-                    </b>
-                    . Durch meine Weiterbildung zum Data Analyst verbinde ich
-                    diese <b>Soft Skills</b> mit analytischem Denken und
-                    technischem Know-how. Ich{" "}
-                    <b>arbeite selbstständig, lerne schnell</b> neue Tools und
-                    Methoden und setze auf eine strukturierte, zuverlässige
-                    Arbeitsweise. Meine Erfahrung im Umgang mit Menschen mit
-                    besonderen Bedürfnissen hat meine <b>Empathie</b> gestärkt –
-                    eine Fähigkeit, die ich auch nutze, um komplexe Daten
-                    verständlich aufzubereiten. In stressigen Situationen
-                    behalte ich den Überblick und finde{" "}
-                    <b>zielorientierte Lösungen</b>. Ich suche eine Position, in
-                    der ich mich als{" "}
-                    <b>kommunikativer, analytischer Teamplayer</b>{" "}
-                    weiterentwickeln kann – idealerweise in einem innovativen
-                    Umfeld, das persönliche Entwicklung fördert.
+                    Assistenz mit – geprägt von{" "}
+                    <b>Verantwortungsbewusstsein, Kommunikationsstärke</b> und{" "}
+                    <b>Organisationstalent</b>. Durch meine Weiterbildung zum
+                    Data Analyst verbinde ich diese <b>Soft Skills</b> mit{" "}
+                    <b>analytischem Denken</b> und <b>technischem Know-how</b>.
+                    Ich arbeite <b>selbstständig, strukturiert</b> und lerne
+                    schnell neue Tools. Meine <b>Empathie</b> hilft mir,
+                    komplexe Daten verständlich aufzubereiten und in{" "}
+                    <b>stressigen Situationen</b> den Überblick zu behalten. Ich
+                    suche eine Position als <b>analytischer Teamplayer</b> in
+                    einem <i>innovativen Umfeld mit Entwicklungspotenzial</i>.
                 </p>
             </div>
         </div>
