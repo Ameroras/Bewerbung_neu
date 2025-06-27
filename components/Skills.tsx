@@ -26,13 +26,21 @@ export const Skills = () => {
                 </Section>
 
                 <Section>
-                    <p className="text-4xl pt-2 pb-3"> Ausbildung </p>
+                    <p className="text-4xl pt-2 pb-3"> Abschlüsse </p>
                     <p>
-                        <b>Realschule West Gießen, 2001</b> – Realschulabschluss
+                        Mittelpunktschule Oberer Hüttenberg Kirch-Göns, 2001 -{" "}
+                        <b>Hauptschulabschluss</b>
                     </p>
                     <p>
-                        <b>Geb. Nikolaus GmbH Gießen, 2001-2004</b> – Maler und
-                        Lackierer
+                        Geb. Nikolaus GmbH Gießen, 2001-2004 –{" "}
+                        <b>Maler und Lackierer</b>
+                    </p>
+                    <p>
+                        Realschule West Gießen, 2006 – <b>Realschulabschluss</b>
+                    </p>
+                    <p>
+                        Data Craft Academy 2024-2025 -{" "}
+                        <b>IHK-Zertifizierter Data Analyst</b>
                     </p>
                 </Section>
                 <Section>

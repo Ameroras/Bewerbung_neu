@@ -8,8 +8,8 @@ export default function Home() {
         <>
             <div className="flex flex-col items-center bg-slate-900 justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
                 <Hero />
-                <Experience />
                 <Skills />
+                <Experience />
                 <Projekte />
             </div>
         </>
