@@ -1,5 +1,5 @@
-import { Chip } from "./Chip";
-import { Section } from "./Section";
+import { Chip } from "./Shared/Chip";
+import { Section } from "./Shared/Section";
 
 const skills = [
     "Organisation",

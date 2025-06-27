@@ -1,12 +1,22 @@
-import { ProjektKarte } from "./ProjektKarte";
-import { Section } from "./Section";
+import { ProjektKarte } from "./Shared/ProjektKarte";
+import { Section } from "./Shared/Section";
 
 // Elemente in der projektListe(Array) sind Strings der Dateinamen aus dem /public
-const wetter_images = ["wetter_1.png", "wetter_2.png", "wetter_3.png", "wetter.jpg"];
+const wetter_images = [
+    "wetter_1.png",
+    "wetter_2.png",
+    "wetter_3.png",
+    "wetter.jpg",
+];
 const fun_images = ["fun_1.png", "fun_2.png", "fun_3.png"];
 const ihk_images = ["IHK_1.png", "IHK_2.png", "IHK_3.png", "IHK_4.png"];
-const musik_images = ["musik_1.png", "musik_2.jpg", "musik_3.png", "musik_4.png", "musik_thumg.png"];
-
+const musik_images = [
+    "musik_1.png",
+    "musik_2.jpg",
+    "musik_3.png",
+    "musik_4.png",
+    "musik_thumg.png",
+];
 
 const projektListe = [
     {
@@ -17,17 +27,19 @@ const projektListe = [
     {
         thumb: "wetter.jpg",
         imgs: wetter_images,
-        git_url: "https://github.com/AmerorasWorks/Paxsisprojekt_-Visualliesierungen",
+        git_url:
+            "https://github.com/AmerorasWorks/Paxsisprojekt_-Visualliesierungen",
     },
-        {
+    {
         thumb: "IHK_thumb.png",
         imgs: ihk_images,
         git_url: "https://github.com/Ameroras/IHK_Pruefung",
     },
-        {
+    {
         thumb: "musik_thumb.png",
         imgs: musik_images,
-        git_url: "https://github.com/AmerorasWorks/Paxsisprojekt_-Visualliesierungen",
+        git_url:
+            "https://github.com/AmerorasWorks/Paxsisprojekt_-Visualliesierungen",
     },
 ];
 

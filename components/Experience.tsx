@@ -1,4 +1,4 @@
-import { Section } from "./Section";
+import { Section } from "./Shared/Section";
 
 export const Experience = () => {
     return (
