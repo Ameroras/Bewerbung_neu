@@ -67,7 +67,7 @@ const RZ_images = [
     {
         src: "RZ_2.png",
         caption:
-            "Auf der zweien Berichtsseiten haben wir die Ausreisser ermittelt und globalen Ereignissen gegenübergestellt um diese herzuleiten.",
+            "Auf der zweien Berichtsseiten haben wir die Ausreisser ermittelt und diese um sie herzuleiten, globalen Ereignissen gegenübergestellt.",
     },
     {
         src: "RZ_3.png",
