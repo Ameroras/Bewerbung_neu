@@ -7,10 +7,11 @@ import ImageSliderOverlay from "./ImageSliderOverlay";
 
 type ProjektKarteProps = {
     url: string;
-    imageSet: string[];
+    imageSet: { src: string; caption: string }[];
     git_url: string;
     subtitle: string;
 };
+
 
 export const ProjektKarte = ({
     url,
@@ -22,7 +23,7 @@ export const ProjektKarte = ({
     return (
         <>
             <div
-                className="flex flex-col max-w-10/12 cursor-pointer"
+                className="flex-col w-11/12 cursor-pointer"
                 onMouseEnter={() => setHovState(true)}
                 onMouseLeave={() => setHovState(false)}>
                 {hovState && (
@@ -31,7 +32,7 @@ export const ProjektKarte = ({
                 <div className="border-b border-indigo-950/10 rounded-2xl">
                     <Image
                         src={"/" + url}
-                        className="rounded-t-2xl min-h-56 w-full"
+                        className="rounded-t-2xl min-h-70 w-full"
                         width={420}
                         height={320}
                         alt=""
@@ -46,9 +47,10 @@ export const ProjektKarte = ({
 };
 
 type HoverLayerProps = {
-    imageSet: string[];
+    imageSet: { src: string; caption: string }[];
     git_url: string;
 };
+
 
 const HoverLayer = ({ imageSet, git_url }: HoverLayerProps) => {
     const [showOverlay, setShowOverlay] = useState(false);
@@ -61,14 +63,14 @@ const HoverLayer = ({ imageSet, git_url }: HoverLayerProps) => {
                 />
             )}
             <div className="w-full flex items-center justify-center gap-6 absolute top-20 bg-white/20 backdrop-blur-md backdrop-opacity-65 py-3 transition duration-150">
-                <div className="text-gray-950 hover:text-indigo-600/80">
+                <div className="text-gray-950 hover:text-indigo-500">
                     <a href={git_url} target="_blank">
-                        <FaGithubAlt size={52} />
+                        <FaGithubAlt size={72} />
                     </a>
                 </div>
-                <div className="text-gray-950 hover:text-indigo-600/80">
+                <div className="text-gray-950 hover:text-indigo-500">
                     <FaRegImages
-                        size={52}
+                        size={72}
                         onClick={() => setShowOverlay(true)}
                     />
                 </div>

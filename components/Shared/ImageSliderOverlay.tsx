@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 interface ImageSliderOverlayProps {
-    images: string[];
+    images: { src: string; caption: string }[];
     onClose: () => void;
     startIndex?: number;
 }
@@ -27,20 +27,29 @@ const ImageSliderOverlay = ({
             id="slider-backdrop"
             className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50"
             onClick={handleBackdropClick}>
-            <div className="relative bg-white/30 rounded-2xl p-6 shadow-2xl flex flex-col items-center w-8/12 h-6/12">
+            <div className="relative bg-white/30 rounded-2xl p-6 shadow-2xl flex flex-col items-center w-9/12 h-[90vh]">
+                {/* Schließen-Button */}
                 <button
-                    className="absolute top-2 right-2 text-gray-600 hover:text-red-600 text-2xl"
+                    className="absolute top-2 right-2 text-red-600 hover:text-gray-600 text-2xl"
                     onClick={onClose}>
                     ×
                 </button>
-                <div className="w-10/12 h-10/12 flex items-center justify-center overflow-hidden p-4">
+
+                {/* Bild */}
+                <div className="w-10/12 h-10/12 flex flex-col items-center justify-center p-4">
                     <img
-                        src={images[current]}
+                        src={`/${images[current].src}`}
                         alt={`Slide ${current + 1}`}
-                        className="object-contain w-full h-full rounded-xl"
+                        className="object-contain w-full max-h-full rounded-xl"
                     />
+                    {/* Caption unter dem Bild */}
+                    <p className="mt-3 text-center text-gray-200 text-lg">
+                        {images[current].caption}
+                    </p>
                 </div>
-                <div className="flex items-center gap-4">
+
+                {/* Navigation */}
+                <div className="flex items-center gap-4 mt-4">
                     <button
                         className="p-2 rounded-full hover:bg-gray-200"
                         onClick={prevImage}>

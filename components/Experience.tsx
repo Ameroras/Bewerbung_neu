@@ -11,7 +11,7 @@ export const Experience = () => {
                     <p className="italic text-sm py-1">
                         Data Craft Academy (remote), 2024–2025
                     </p>
-                    <p className="pt-1">
+                    <p className="pt-6">
                         Im Rahmen meiner Umschulung habe ich fundierte
                         Kenntnisse in{" "}
                         <b>Datenanalyse, Statistik und Visualisierung</b>{" "}

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { HoverChip } from "./Shared/HoverChip";
 import MyChart from "./recharts/MyChart";
+import { FaLinkedin } from "react-icons/fa";
 
 const labels = ["Python", "Power BI", "SQL", "Excel", "PM-Tools", "Teamplay"];
 const skills = [
@@ -150,6 +151,22 @@ export const Hero = () => {
                     suche eine Position als <b>analytischer Teamplayer</b> in
                     einem <i>innovativen Umfeld mit Entwicklungspotenzial</i>.
                 </p>
+            </div>
+            <div className="flex gap-4 justify-center mt-6">
+                <a
+                    href="mailto:ratzmer.d86@gmail.com"
+                    className="px-6 font-semibold py-3 bg-red-800/10 hover:bg-indigo-800/70 backdrop-blur shadow shadow-indigo-700/70 text-neutral-200 text-center rounded-lg transition">
+                    Kontaktieren Sie mich hier direkt via Mail
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/dorian-ratzmer"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-2 px-6 font-semibold py-3 bg-blue-700/90 hover:bg-blue-800/90 backdrop-blur shadow shadow-blue-700/90 text-white text-center rounded-lg transition">
+                    <FaLinkedin size={24} />
+                    oder via PN bei LinkedIn
+                </a>
             </div>
         </div>
     );
