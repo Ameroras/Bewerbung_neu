@@ -119,7 +119,7 @@ export const Projekte = () => {
                     </a>
 
                     {/* Überschrift */}
-                    <p className="text-4xl pb-2">Projekte</p>
+                    <p className="text-4xl pb-2">Projekte mit Bildergalerie</p>
                 </div>
 
                 <Section>
@@ -153,14 +153,13 @@ export const Projekte = () => {
                             oder via PN bei LinkedIn
                         </a>
                         <a
-                        href="https://github.com/Ameroras"
-                        target="_blank"
-                        rel="noreferrer"
-                       className="flex items-center gap-2 px-6 font-semibold py-3 bg-indigo-800 hover:bg-indigo-600/90 backdrop-blur shadow shadow-blue-700/90 text-white text-center rounded-lg transition">
-                        <span className="text">GitHub Profil</span>
-                        <FaGithub size={24} />
-                    </a>
-
+                            href="https://github.com/Ameroras"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="flex items-center gap-2 px-6 font-semibold py-3 bg-indigo-800 hover:bg-indigo-600/90 backdrop-blur shadow shadow-blue-700/90 text-white text-center rounded-lg transition">
+                            <span className="text">GitHub Profil</span>
+                            <FaGithub size={24} />
+                        </a>
                     </div>
                 </Section>
             </div>
