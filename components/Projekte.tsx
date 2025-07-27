@@ -5,10 +5,10 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 // Elemente in der projektListe(Array) sind Strings der Dateinamen aus dem /public
 
 const fun_images = [
-    { src: "fun.png", caption: "coming soon" },
-    { src: "fun.png", caption: "coming soon" },
-    { src: "fun.png", caption: "coming soon" },
-    { src: "fun.png", caption: "coming soon" },
+    { src: "fun.jpg", caption: "coming soon" },
+    { src: "fun.jpg", caption: "coming soon" },
+    { src: "fun.jpg", caption: "coming soon" },
+    { src: "fun.jpg", caption: "coming soon" },
 ];
 const ihk_images = [
     {
