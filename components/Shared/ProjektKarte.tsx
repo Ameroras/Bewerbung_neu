@@ -41,6 +41,7 @@ export const ProjektKarte = ({
                 <div className="border-b border-indigo-950/30 bg-indigo-700/30 rounded-b-2xl  text-center">
                     <p className="">{subtitle}</p>
                 </div>
+                
             </div>
         </>
     );

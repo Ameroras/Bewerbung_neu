@@ -3,6 +3,11 @@ import Image from "next/image";
 import { HoverChip } from "./Shared/HoverChip";
 import MyChart from "./recharts/MyChart";
 import { FaLinkedin } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+
+
+
 
 const labels = ["Python", "Power BI", "SQL", "Excel", "PM-Tools", "Teamplay"];
 const skills = [
@@ -76,7 +81,7 @@ const skills = [
 
 export const Hero = () => {
     return (
-        <div className="w-full px-3 py-4 rounded-xl flex flex-col gap-6 bg-slate-800 shadow-lg border border-slate-600">
+        <div className="text-white w-full px-3 py-4 rounded-xl flex flex-col gap-6 bg-slate-800 shadow-lg border border-slate-600">
             <div className="font-bold text-4xl">Dorian Ratzmer</div>
             <p className="italic py-1">
                 IHK-zertifizierter Datenanalyst - Python, SQL, Power BI
@@ -155,8 +160,9 @@ export const Hero = () => {
             <div className="flex gap-4 justify-center mt-6">
                 <a
                     href="mailto:ratzmer.d86@gmail.com"
-                    className="px-6 font-semibold py-3 bg-red-800/10 hover:bg-indigo-800/70 backdrop-blur shadow shadow-indigo-700/70 text-neutral-200 text-center rounded-lg transition">
+                    className="flex items-center gap-2 px-6 font-semibold py-3 bg-red-800/10 hover:bg-indigo-800/70 backdrop-blur shadow shadow-indigo-700/70 text-neutral-200 text-center rounded-lg transition">
                     Kontaktieren Sie mich hier direkt via Mail
+                    <HiOutlineMail size={24} />
                 </a>
 
                 <a
@@ -164,8 +170,8 @@ export const Hero = () => {
                     target="_blank"
                     rel="noreferrer"
                     className="flex items-center gap-2 px-6 font-semibold py-3 bg-blue-700/90 hover:bg-blue-800/90 backdrop-blur shadow shadow-blue-700/90 text-white text-center rounded-lg transition">
-                    <FaLinkedin size={24} />
                     oder via PN bei LinkedIn
+                    <FaLinkedin size={24} />
                 </a>
             </div>
         </div>

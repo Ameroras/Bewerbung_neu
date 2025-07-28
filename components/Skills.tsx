@@ -15,7 +15,7 @@ const skills = [
 export const Skills = () => {
     return (
         <>
-            <div className="w-full px-3 py-4 rounded-xl flex flex-col gap-2 bg-slate-800 shadow-lg border border-slate-600">
+            <div className="text-white w-full px-3 py-4 rounded-xl flex flex-col gap-2 bg-slate-800 shadow-lg border border-slate-600">
                 <Section>
                     <p className="text-4xl pb-2"> Meine Fähigkeiten</p>
                     <div className=" grid text-sm md:text-base grid-cols-3 gap-1.5">

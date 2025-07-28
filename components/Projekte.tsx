@@ -1,6 +1,7 @@
 import { ProjektKarte } from "./Shared/ProjektKarte";
 import { Section } from "./Shared/Section";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi"
 
 // Elemente in der projektListe(Array) sind Strings der Dateinamen aus dem /public
 
@@ -106,7 +107,7 @@ const projektListe = [
 export const Projekte = () => {
     return (
         <>
-            <div className="w-full flex flex-col gap-4 bg-slate-800 shadow-lg">
+            <div className="text-white w-full flex flex-col gap-4 bg-slate-800 shadow-lg">
                 <div className="flex items-center gap-3 px-4 pt-4">
                     {/* GitHub Icon-Button */}
                     <a
@@ -141,16 +142,17 @@ export const Projekte = () => {
                     <div className="flex gap-4 justify-center">
                         <a
                             href="mailto:ratzmer.d86@gmail.com"
-                            className="flex items-center gap-2 px-6 font-semibold py-3 bg-red-800/10 hover:bg-indigo-800/70 backdrop-blur shadow shadow-indigo-700/70 text-white text-center rounded-lg transition">
+                            className="flex items-center gap-2 px-6 font-semibold py-3 bg-red-800/10 hover:bg-indigo-800/70 backdrop-blur shadow shadow-indigo-700/70 text-neutral-200 text-center rounded-lg transition">
                             Kontaktieren Sie mich hier direkt via Mail
+                            <HiOutlineMail size={24} />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/dorian-ratzmer"
                             target="_blank"
                             rel="noreferrer"
                             className="flex items-center gap-2 px-6 font-semibold py-3 bg-blue-700/90 hover:bg-blue-800/90 backdrop-blur shadow shadow-blue-700/90 text-white text-center rounded-lg transition">
-                            <FaLinkedin size={24} />
                             oder via PN bei LinkedIn
+                            <FaLinkedin size={24} />
                         </a>
                         <a
                             href="https://github.com/Ameroras"

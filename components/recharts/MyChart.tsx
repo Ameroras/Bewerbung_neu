@@ -43,10 +43,17 @@ export default class Example extends PureComponent {
             <div className="h-[20rem] w-[22rem] ">
                 <ResponsiveContainer width="130%" height="140%" className={""}>
                     <RadarChart cx="52%" cy="55%" data={data}>
-                        <Legend className="" align="left" verticalAlign="top" />
+                        <Legend
+                            wrapperStyle={{ color: "#ffffff" }}
+                            align="left"
+                            verticalAlign="top"
+                        />
                         <PolarGrid />
-                        <PolarAngleAxis dataKey="subject" />
-                        <PolarRadiusAxis />
+                        <PolarAngleAxis
+                            dataKey="subject"
+                            tick={{ fill: "#ffffff" }}
+                        />
+                        <PolarRadiusAxis tick={{ fill: "#ffffff" }} />
 
                         <Radar
                             name="Ziel"
