@@ -3,7 +3,6 @@ import Image from "next/image";
 import { HoverChip } from "./Shared/HoverChip";
 import MyChart from "./recharts/MyChart";
 import { FaLinkedin } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 
 

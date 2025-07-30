@@ -15,6 +15,11 @@ const data = [
         A: 5,
         B: 8,
     },
+        {
+        subject: "Excel",
+        A: 7,
+        B: 8,
+    },
     {
         subject: "SQL",
         A: 6,
