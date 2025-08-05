@@ -77,6 +77,13 @@ const RZ_images = [
     },
 ];
 
+const ihr_projekt_images = [
+    { src: "Ihr_projekt_thumb.png", caption: "coming soon" },
+    { src: "Ihr_projekt_thumb.png", caption: "coming soon" },
+    { src: "Ihr_projekt_thumb.png", caption: "coming soon" },
+    { src: "Ihr_projekt_thumb.png", caption: "coming soon" },
+];
+
 const projektListe = [
     {
         thumb: "fun.jpg",
@@ -98,7 +105,7 @@ const projektListe = [
     },
     {
         thumb: "Ihr_projekt_thumb.png",
-        imgs: RZ_images,
+        imgs: ihr_projekt_images,
         git_url: "https://github.com/AmerorasWorks/Redezeit-Analyse",
         subtitle: "Platzhalter",
     },
